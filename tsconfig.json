@@ -8,20 +8,14 @@
       "DOM",
       "DOM.Iterable"
     ],
-    "skipLibCheck": true,
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    // "declaration": true,
-    // "emitDeclarationOnly": true,
-
+    "outDir": "./dist",
+    "moduleResolution": "Bundler",
+    "declaration": true,
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true
   },
   "include": [
     "src"
