@@ -8,16 +8,13 @@
       "DOM",
       "DOM.Iterable"
     ],
-    "outDir": "./dist",
-    "moduleResolution": "Bundler",
+    "outDir": "./dist/es",
+    "moduleResolution": "Node",
+    "isolatedModules": true,
     "declaration": true,
-    /* Linting */
     "strict": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src"
+    "./src"
   ]
 }
