@@ -4,11 +4,6 @@
 
 ## template Usage
 
-If you use github, configure your workflow in the .github folder.github-script.you can choose **Github-script** write workflows in JavaScript
-
-If you don't use github, you can install husky and lint-staged to configure your workflow.
-
-1.Replace all "lib-name" with your libName
 
 ```bash
 git config core.autocrlf false
@@ -16,7 +11,7 @@ git config core.autocrlf false
 corepack enable
 #version must be SemVer,you can run NPM info to check the latest SemVer
 #replace package.json pnpm version
-corepack prepare pnpm@lasete --activate
+corepack prepare pnpm@8.6.7 --activate
 ```
 
 2.install degit copy the repository
@@ -24,7 +19,7 @@ corepack prepare pnpm@lasete --activate
 ```bash
 pnpm add -g degit
 
-degit wwog/lib-template
+degit wwog/lib-starter
 ```
 
 3.according to the editor,install prettier and eslint plugin
