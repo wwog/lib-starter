@@ -1,0 +1,31 @@
+{
+  "name": "lib-starter",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.6.7",
+  "description": "",
+  "author": "wwog",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint --ext .ts,.tsx,.js.jsx src",
+    "lint:fix": "eslint --fix --ext .ts,.tsx,.js.jsx src",
+    "type-check": "tsc --noEmit",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.3",
+    "vitest": "^0.33.0"
+  }
+}
