@@ -10,6 +10,7 @@
     "dist"
   ],
   "scripts": {
+    "clean": "node scripts/clean.cjs",
     "build:tsc": "tsc",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
@@ -20,11 +21,11 @@
   },
   "devDependencies": {
     "@types/node": "^18.16.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.44.0",
-    "eslint-config-prettier": "^8.8.0",
-    "prettier": "^3.0.0",
-    "typescript": "^5.1.6"
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "prettier": "latest",
+    "typescript": "latest"
   }
 }
