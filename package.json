@@ -3,6 +3,17 @@
   "version": "0.0.0",
   "packageManager": "pnpm@8.6.7",
   "description": "",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": "./*"
+  },
   "author": "wwog",
   "license": "MIT",
   "type": "module",
@@ -12,8 +23,6 @@
   "scripts": {
     "clean": "node scripts/clean.cjs",
     "build:tsc": "tsc",
-    "test": "vitest",
-    "test:coverage": "vitest --coverage",
     "lint": "eslint --ext .ts,.tsx,.js.jsx src",
     "lint:fix": "eslint --fix --ext .ts,.tsx,.js.jsx src",
     "type-check": "tsc --noEmit",
