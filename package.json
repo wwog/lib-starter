@@ -23,18 +23,12 @@
   "scripts": {
     "clean": "node scripts/clean.cjs",
     "build:tsc": "tsc",
-    "lint": "eslint --ext .ts,.tsx,.js.jsx src",
-    "lint:fix": "eslint --fix --ext .ts,.tsx,.js.jsx src",
-    "type-check": "tsc --noEmit",
+    "fix": "biome check --apply src ",
     "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
     "@types/node": "^18.16.0",
-    "@typescript-eslint/eslint-plugin": "latest",
-    "@typescript-eslint/parser": "latest",
-    "eslint": "latest",
-    "eslint-config-prettier": "latest",
-    "prettier": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "@biomejs/biome": "latest"
   }
 }

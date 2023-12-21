@@ -1,4 +1,4 @@
-import { getVersion } from './helper'
+import { getVersion } from "./helper";
 
-export { getVersion }
-console.log(getVersion())
+export { getVersion };
+console.log(getVersion());

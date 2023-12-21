@@ -2,19 +2,14 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
+    "resolveJsonModule": true,
     "module": "ESNext",
-    "lib": [
-      "ES2020",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "outDir": "./dist/es",
     "moduleResolution": "Node",
     "isolatedModules": true,
     "declaration": true,
-    "strict": true,
+    "strict": true
   },
-  "include": [
-    "./src"
-  ]
+  "include": ["./src"]
 }
